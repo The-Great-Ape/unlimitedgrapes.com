@@ -248,6 +248,15 @@ a {
   color: #fff;
 }
 
+.nav-button.disabled {
+  cursor: default;
+}
+
+.nav-button.disabled:hover {
+  background-color: #fff;
+  color: #252525;
+}
+
 .icon {
   background-color: transparent;
   font-family: Icon-round;
