@@ -485,7 +485,21 @@ a {
 }
 
 .footer-section {
-  display: none;
+  margin-top: 100px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  background-color: #171717;
+}
+
+.leftgrid {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .right-grid {
@@ -493,6 +507,54 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-top: -10px;
+}
+
+.grape-footer-company {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.social-icon {
+  font-family: Fa-Brands, sans-serif;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #f38aff;
+}
+
+.social-icon.margin-left {
+  margin-left: 20px;
+}
+
+.copyright {
+  font-family: Fa-Reg, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.text-block {
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+
+.great-ape {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 991px) {
@@ -797,6 +859,14 @@ a {
   .menu-icon {
     margin-top: 7px;
   }
+
+  .social-icon {
+    font-size: 28px;
+  }
+
+  .text-block {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -820,6 +890,10 @@ a {
   .container {
     padding-right: 20px;
     padding-left: 20px;
+  }
+
+  .container.footer {
+    display: block;
   }
 
   .button.mt-40 {
@@ -878,6 +952,28 @@ a {
 
   .grape-hackathon-container {
     max-width: 100%;
+  }
+
+  .footer-section {
+    padding-bottom: 25px;
+  }
+
+  .right-grid {
+    margin-top: 0px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .text-block {
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .great-ape {
+    font-size: 16px;
   }
 }
 
@@ -987,6 +1083,27 @@ a {
 @font-face {
   font-family: 'Materialiconsround';
   src: url('../fonts/MaterialIconsRound-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Fa-Reg';
+  src: url('../fonts/fa-regular-400.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Fa-Brands';
+  src: url('../fonts/fa-brands-400.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Fa-Solid';
+  src: url('../fonts/fa-solid-900.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
