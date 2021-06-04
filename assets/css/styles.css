@@ -1,0 +1,21 @@
+.bg-info {
+  background-color: #000000!important;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#social-media-link{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#social-media-link:hover {
+  color: #DC1FFF;
+}
+
+a.nav-link .disabled{
+  pointer-events: none;
+}
