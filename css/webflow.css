@@ -903,7 +903,6 @@ textarea.w-select {
   overflow: hidden;
   height: 500px;
   color: white;
-  background:rgba(0,0,0,.5);
 }
 .w-background-video > video {
   background-size: cover;
