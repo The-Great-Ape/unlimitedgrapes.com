@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Sat Jun 12 2021 23:46:51 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sat Jun 12 2021 23:59:01 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="60b0230e5fa08455d9f06085" data-wf-site="60b0230e5fa0847b66f06084">
 <head>
   <meta charset="utf-8">
@@ -90,7 +90,7 @@
       <div></div>
     </div>
   </div>
-  <section data-poster-url="videos/grape_bgvid-poster-00001.jpg" data-video-urls="videos/grape_bgvid-transcode.mp4,videos/grape_bgvid-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="section hero w-background-video w-background-video-atom"><video autoplay loop style="background-image:url(&quot;videos/grape_bgvid-poster-00001.jpg&quot;)" muted playsinline data-wf-ignore="true" data-object-fit="cover">
+  <section data-poster-url="videos/grape_bgvid-poster-00001.jpg" data-video-urls="videos/grape_bgvid-transcode.mp4,videos/grape_bgvid-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="section hero w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/grape_bgvid-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
       <source src="videos/grape_bgvid-transcode.mp4" data-wf-ignore="true">
       <source src="videos/grape_bgvid-transcode.webm" data-wf-ignore="true">
     </video>
@@ -436,10 +436,10 @@
   <!--  START: Mobile Autoplay Video  -->
   <script>
 	/* Video must have playinline and be muted to play on mobile */
-  document.addEventListener("DOMContentLoaded", function(){
-    $("video").get(0).volume=0;
-    $('video').get(0).play()
-  });
+  const video = document.getElementsByTagName("video")[0];
+  video.setAttribute("playsinline", "");
+  video.setAttribute("muted", "");
+  video.play();
 </script>
   <!--  END: Mobile Autoplay Video  -->
 </body>
