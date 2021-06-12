@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Sat Jun 12 2021 23:36:15 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sat Jun 12 2021 23:46:51 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="60b0230e5fa08455d9f06085" data-wf-site="60b0230e5fa0847b66f06084">
 <head>
   <meta charset="utf-8">
@@ -90,7 +90,7 @@
       <div></div>
     </div>
   </div>
-  <section data-poster-url="videos/grape_bgvid-poster-00001.jpg" data-video-urls="videos/grape_bgvid-transcode.mp4,videos/grape_bgvid-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="section hero w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/grape_bgvid-poster-00001.jpg&quot;)" muted playsinline data-wf-ignore="true" data-object-fit="cover">
+  <section data-poster-url="videos/grape_bgvid-poster-00001.jpg" data-video-urls="videos/grape_bgvid-transcode.mp4,videos/grape_bgvid-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="section hero w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;videos/grape_bgvid-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
       <source src="videos/grape_bgvid-transcode.mp4" data-wf-ignore="true">
       <source src="videos/grape_bgvid-transcode.webm" data-wf-ignore="true">
     </video>
@@ -235,17 +235,6 @@
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=60b0230e5fa0847b66f06084" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
-  <!--  START: Mobile Autoplay Video  -->
-  <!-- <script>
-    /* Video must have playinline and be muted to play on mobile */
-    document.addEventListener("DOMContentLoaded", function(){
-      $("video").get(0).volume=0;
-      $('video').attr('playsinline',true);
-      $('video').attr('muted',"muted");
-      $('video').get(0).play()
-    });
-  </script> -->
-  <!--  END: Mobile Autoplay Video  -->
   <script>
   let dataset = [0.4, 1.6, 0.7, 1.3, 0.8, 5.3];
   let tokenomicsLabels = [
@@ -444,5 +433,16 @@
     setTimeout(draw, 800);
   };
 </script>
+  <!--  START: Mobile Autoplay Video  -->
+  <script>
+	/* Video must have playinline and be muted to play on mobile */
+  document.addEventListener("DOMContentLoaded", function(){
+    $("video").get(0).volume=0;
+    $('video').attr('playsinline', true);
+    $('video').attr('muted', 'muted');
+    $('video').get(0).play()
+  });
+</script>
+  <!--  END: Mobile Autoplay Video  -->
 </body>
 </html>
