@@ -645,6 +645,18 @@ a {
   transform: translate(-50%, 0px);
 }
 
+.hackathon-winner-link {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hackathon-winner-link:hover {
+  color: #7cd0ff;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 991px) {
   h2 {
     font-size: 48px;
